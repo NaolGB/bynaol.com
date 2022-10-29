@@ -30,6 +30,6 @@ jobs:
       with:
         server: ftp.bynaol.com
         username: ${{secrets.FTP_USERNAME}}
-        password: ${{ secrets.password }}
+        password: ${{ secrets.PASSWORD }}
         protocol: ftps
         port: 21
