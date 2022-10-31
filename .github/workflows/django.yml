@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: linux
+    runs-on: linux-latest
     strategy:
       max-parallel: 4
       matrix:
@@ -30,6 +30,6 @@ jobs:
       with:
         server: ftp.bynaol.com
         username: ${{secrets.FTP_USERNAME}}
-        password: ${{ secrets.FTP_PASSWORD }}
+        password: ${{secrets.FTP_PASSWORD}}
         protocol: ftp
         port: 21
