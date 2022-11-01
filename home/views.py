@@ -1,5 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from projects.models import Project
 
 def home(request):
-    return render(request, 'home/home.html')
+    context = {
+        'projects' : Project.objects.all()
+    }
+
+    return render(request, 'home/home.html', context=context)
+
+def about(request):
+    return render(request, 'home/about.html')
