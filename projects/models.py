@@ -22,9 +22,10 @@ class Experience(models.Model):
 
     experience_type = models.CharField(max_length=3, choices=CHOICES, default='PRF')
     experience_name = models.CharField(max_length=128)
+    experience_company = models.CharField(max_length=128)
     experience_description = models.TextField()
     experience_start_date = models.DateField()
-    experence_end_date = models.DateField(blank=True)
+    experence_end_date = models.DateField()
     experience_skills = models.CharField(max_length=256)
 
     def __str__(self) -> str:
