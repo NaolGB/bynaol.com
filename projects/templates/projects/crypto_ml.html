@@ -1,4 +1,5 @@
 {% extends 'main.html' %}
+{% load static %}
 {% block title %}
 <div class='display-1'>
     Machine Learning Based Cryptocurrency Trading
@@ -8,20 +9,25 @@
 </div>
 <div class='d-flex mb-3 gap-3 pt-5'>
     <a href='https://github.com/NaolGB/MachineLearningPricePrediction'>GitHub repo</a>
-    <a href="{% url 'projects_home' %}">Projects</a>
 </div>
 {% endblock title %}
 
 {% block content %}
 
-<p>
+<p class='pt-5'>
     Price prediction for cryptocurrency by classification. I performed binary classification and multilabel classificaiton 
     on cryptocurrency market data. I have used mainly Convolutional Neural Networks to find features that are indicative of
     the price trend in the coming time frames. While there is a promising outcome, there is still more work required
     on this project to make it into a practical profitable strategy. The back testing I performed suggests 
     lack of profitabilityin practice.
-    <br>
-    <br>
+    <div class='d-flex justify-content-center gap-4 pt-3 pb-4'>
+        <div class=''  style='width: 24rem'>
+            <img src="{% static 'projects/crypto_ml_multilabel_backtest.png' %}" class='rounded img-fluid' alt="">
+        </div>
+        <div class=''  style='width: 24rem'>
+            <img src="{% static 'projects/crypto_ml_training.png' %}" class='rounded img-fluid' alt="">
+        </div>
+    </div>
     The lack of practical profitability comes from trading fees and lack of discounting immediate outcomes for
     future ones. I am doing further research and trying different types of models including Logistic 
     Regression, LSTM, KNN, SVM, and Ensemble methods as part of a larger project. In addition I am learning and working

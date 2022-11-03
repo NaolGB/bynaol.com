@@ -1,4 +1,5 @@
 {% extends 'main.html' %}
+{% load static %}
 {% block title %}
 <div class='display-1'>
     Web Map
@@ -8,18 +9,24 @@
 </div>
 <div class='d-flex mb-3 gap-3 pt-5'>
     <a href='https://github.com/NaolGB/Web-Map'>GitHub repo</a>
-    <a href="{% url 'projects_home' %}">Projects</a>
 </div>
 {% endblock title %}
 
 {% block content %}
 
-<p>
+<p class='pt-5'>
     Aimned at creating a map of the internet, I 
     Visualized the internet through website domain neames and popularity. While the list of websites  
     discovered is continiously updating to discover new websites and update popularity of existing ones, the 
     visualizations currently provided using the top ~100K websites.
-    <br><br>
+    <div class='d-flex justify-content-center gap-4 pt-3 pb-4'>
+        <div class=''  style='width: 24rem'>
+            <img src="{% static 'projects/web_map_100k.png' %}" class='rounded img-fluid' alt="">
+        </div>
+        <div class=''  style='width: 24rem'>
+            <img src="{% static 'projects/web_map_tld.png' %}" class='rounded img-fluid' alt="">
+        </div>
+    </div>
     I used python to crawl through the internet starting from seed domains (domains big enough to serve as a hub).
     To increase efficiency while crawling, I used MySQL with multiprocessing as MySQL can 
     handle mutiple conncetions at a time from different process.
