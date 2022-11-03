@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% block title %}
+<div class='display-1'>
+    Balloon Analoge Risk Task
+</div>
+<div class='fs-6 fw-light pb-3'>
+    Quantifying risk taking tendency of players through web based computer game
+</div>
+<div class='d-flex mb-3 gap-3 pt-5'>
+    <a href="#">Demo</a>
+    <a href='https://github.com/NaolGB/BalloonAnalogueRiskTask'>GitHub repo</a>
+    <a href="{% url 'projects_home' %}">Projects</a>
+</div>
+{% endblock title %}
+
+{% block content %}
+
+<p>
+    Balloon Analogue Risk Task (BART) is a computer game to measure risk taking 
+    behavior of players. It is used by researchers and employers to determine, among 
+    others, risk propensity. While there are multiple implementations of BART, 
+    there is a lack of implementations where researchers can record data other than just 
+    number of pumps or clicks.
+    <br>
+    <br>
+    Using Django, I was able to record multiple forms of data more than clicks. I further developed this
+    into active inference which helped me analyze player behaviour with better quantifyability.
+    Read more about BART here.
+</p>
+
+{% endblock content %}  

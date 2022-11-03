@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+{% block title %}
+<div class='display-1'>
+    Machine Learning Based Cryptocurrency Trading
+</div>
+<div class='fs-6 fw-light pb-3'>
+    Machine Learning approaches to predict 12 hour price trends for cryptocurrency assets
+</div>
+<div class='d-flex mb-3 gap-3 pt-5'>
+    <a href='https://github.com/NaolGB/MachineLearningPricePrediction'>GitHub repo</a>
+    <a href="{% url 'projects_home' %}">Projects</a>
+</div>
+{% endblock title %}
+
+{% block content %}
+
+<p>
+    Price prediction for cryptocurrency by classification. I performed binary classification and multilabel classificaiton 
+    on cryptocurrency market data. I have used mainly Convolutional Neural Networks to find features that are indicative of
+    the price trend in the coming time frames. While there is a promising outcome, there is still more work required
+    on this project to make it into a practical profitable strategy. The back testing I performed suggests 
+    lack of profitabilityin practice.
+    <br>
+    <br>
+    The lack of practical profitability comes from trading fees and lack of discounting immediate outcomes for
+    future ones. I am doing further research and trying different types of models including Logistic 
+    Regression, LSTM, KNN, SVM, and Ensemble methods as part of a larger project. In addition I am learning and working
+    with Reinforcement Learning to develop a further profitable strategy.
+    <br>
+    <br>
+
+    This image shows the profit on back testing using the multi label classification. The test was run on 
+    five months data (Jan 2022 - June 2022) on a single strategy. The strategy used was long/short for 
+    the prediction length (12 hours). While, like binary classification, it is not in general profitable, 
+    it is more profitable (less loss) than Binary classificaton. It is also less reactive to trends. The 
+    next steps in the improvement of this model would be increasing the number of data labeled as down 
+    and up trend (decreasing the range defined as sideways trend).
+</p>
+
+{% endblock content %}  
