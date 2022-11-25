@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'bynaol.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# # dev
+# # dev (sqlite3)
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -95,7 +95,6 @@ DATABASES = {
         'USER': secrets.MYSQL_USER,
         'PASSWORD': secrets.MYSQL_PASSWORD,
         'HOST': 'localhost',
-        # 'PORT': '3306',
     }
 }
 

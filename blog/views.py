@@ -14,7 +14,6 @@ def blog(request, slug):
 
     text = Blog.objects.get(slug=slug).content
     text_js = json.loads(text)
-    # print(text)
 
     intro = text_js['intro']
     subsections = text_js['subsections']

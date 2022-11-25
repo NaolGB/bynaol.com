@@ -140,3 +140,4 @@ create_blog.ipynb
 # data
 images/
 migrations/
+*.sqlite3
