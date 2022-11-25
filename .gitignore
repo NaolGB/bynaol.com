@@ -129,5 +129,13 @@ dmypy.json
 .pyre/
 
 
-# others
+# credentials
 secrets.py
+
+# others
+try.py
+try.ipynb
+create_blog.ipynb
+
+# data
+images/

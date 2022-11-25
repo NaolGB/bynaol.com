@@ -9,11 +9,12 @@
     <title>Naol Basaye</title>
 </head>
 <body>
-    <div class='bg-light'>
+    {% comment %} top bar {% endcomment %}
+    <div class='mb-5 pb-5' style='background:#ffffff;'>
         <nav class="d-flex justify-content-center gap-5 pt-3 pb-5">
             <a href="{% url 'home_home' %}">Home</a>
-            {% comment %} <a href="{% url 'projects_home' %}">Projects</a> {% endcomment %}
             <a href="{% url 'home_about' %}">About Me</a>
+            <a href="{% url 'blog_home' %}">Blog</a>
         </nav>
 
         <div class='container'>
