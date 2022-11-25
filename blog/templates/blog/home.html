@@ -27,7 +27,7 @@
 {% block content %}
     <div class="d-flex justify-content-around flex-wrap gap-3">
         {% for b in blogs %}
-            <div class="card" style="width: 18rem;" style="background: #12fe43;">
+            <div class="card border-1" style="width: 18rem;" style="background: #12fe43;">
                 <img src="{% static b.image.name %}" class="card-img-top" alt={{b.image.name}} >
                 <div class="card-body">
                     <h5 class="card-title">{{b.title}}</h5>
