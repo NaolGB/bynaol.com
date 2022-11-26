@@ -88,26 +88,26 @@ WSGI_APPLICATION = 'bynaol.wsgi.application'
 # }
 
 # # dev (on remote mysql)
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': secrets.MYSQL_DB_NAME,
-        'USER': secrets.MYSQL_USER,
-        'PASSWORD': secrets.MYSQL_PASSWORD,
-        'HOST': 'bynaol.com',
-    }
-}
-
-# # production
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': secrets.MYSQL_DB_NAME,
 #         'USER': secrets.MYSQL_USER,
 #         'PASSWORD': secrets.MYSQL_PASSWORD,
-#         'HOST': 'localhost',
+#         'HOST': 'bynaol.com',
 #     }
 # }
+
+# production
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': secrets.MYSQL_DB_NAME,
+        'USER': secrets.MYSQL_USER,
+        'PASSWORD': secrets.MYSQL_PASSWORD,
+        'HOST': 'localhost',
+    }
+}
 
 
 # Password validation
