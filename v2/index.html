@@ -19,7 +19,10 @@
         </nav>
         
         <div class="d-flex flex-column align-items-center p-4">
-            <p>Duke Logo Duke University</p>
+            <div class="d-flex gap-1">
+                <img src="images/Duke.svg" height="25">
+                <p>Duke University</p>
+            </div>
             <h1 class="display-3">Naol Basaye</h1>
             <p>Software Engineering & Data Science</p>
         </div>
@@ -31,23 +34,54 @@
     </div>
 
     <!-- body -->
-    <div class="d-flex flex-wrap justify-content-center gap-3">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="images/bynaol_blog.png" class="img-fluid rounded-start" alt="screenshot of homepage of the website blog.bynaol.com">
+    <div class="mt-5">
+        <!-- projects -->
+        <div class="d-flex flex-wrap justify-content-center gap-3v">
+            <div class="card mb-3 box" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/bynaol_blog.png" class="img-fluid rounded-start" alt="screenshot of homepage of the website blog.bynaol.com">
+                        <div class="d-flex flex-column align-items-center gap-3 p-4">
+                            <a href="#">Visit the Blog</a>
+                            <a href="#">Visit the Repo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">End-to-end Blogging Platform</h5>
+                        <p class="card-text">
+                            Developed a blogging platform, full stack, that is optimized for usability, running on my 
+                            website on CI/CD throug GitHub. Currently with a score of 99% on Google page speed 
+                            insights. In addition, I used GPT-3 and DALLE&#183;2 to generate relevant content automatically.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Python, Django, HTML/CSS/JavaScript, API, CI/CD, GitHub, Database, GPT</small></p>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Full stack Blogging Platform</h5>
-                    <p class="card-text">
-                        Fully automatic blog writing process powered by GPT-3 and DALLE&#183;2. Developed on 
-                        Django front and back-end. Served CI/CD throught GitHub Actions.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Python, Django, HTML/CSS/JavaScript, API, CI/CD, GitHub, Database, GPT</small></p>
-                  </div>
+            </div>
+
+            <div class="card mb-3 box" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/blinder_resume.svg" class="img-fluid rounded-start" alt="screenshot of upload page of blinder resume">
+                        <div class="d-flex flex-column align-items-center gap-3 p-4">
+                            <a href="#">Visit the Repo</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume Analysis and Parsing</h5>
+                        <p class="card-text">
+                            Developed a program that screens and parses resumes of job applicants, removing 
+                            points of bias agains certain groups of applicants. The program has two UI endpoints where
+                            the applicant and the recruiter can interact with it. Including an abstraction mechanism in the 
+                            middle making it harder to map applicants to certain conscious or unconscious bias methods. 
+                        </p>
+                        <p class="card-text"><small class="text-muted">Python, Django, API, CI/CD, GPT</small></p>
+                    </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 
@@ -55,5 +89,19 @@
     <footer>
         &copy; <script>document.write(new Date().getFullYear())</script> Naol Basaye
     </footer>
+
+    <style>
+        .box {
+            transition: box-shadow .3s;
+            margin: 50px;
+            border-radius:5px;
+            border: 1px solid #ccc;
+            background: #fff;
+            float: left;
+        }
+        .box:hover {
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+        }
+    </style>
 </body>
 </html>
