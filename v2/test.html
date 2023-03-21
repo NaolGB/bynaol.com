@@ -1,0 +1,62 @@
+
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+  <title>Animated Scrolling</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .shape {
+      position: absolute;
+    }
+
+    #rectangle {
+      width: 200px;
+      height: 200px;
+      background: #F00;
+      top: 0;
+      left: 0;
+    }
+
+    #circle {
+      width: 150px;
+      height: 150px;
+      background: #00F;
+      top: 25%;
+      left: 25%;
+      border-radius: 50%;
+    }
+
+    #triangle {
+      width: 100px;
+      height: 100px;
+      background: #0F0;
+      top: 50%;
+      left: 50%;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="rectangle" class="shape"></div>
+  <div id="circle" class="shape"></div>
+  <div id="triangle" class="shape"></div>
+
+  <script>
+    window.onscroll = function() {
+      var rectY = window.pageYOffset;
+      var circY = window.pageYOffset * .75;
+      var triY = window.pageYOffset * .5;
+
+      document.getElementById("rectangle").style.top = rectY + "px";
+      document.getElementById("circle").style.top = circY + "px";
+      document.getElementById("triangle").style.top = triY + "px";
+    };
+  </script>
+</body>
+
+</html>
