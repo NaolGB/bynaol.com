@@ -141,3 +141,4 @@ create_blog.ipynb
 images/
 migrations/
 *.sqlite3
+raw_assets/

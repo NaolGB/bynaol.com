@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 750" style="enable-background:new 0 0 500 750;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF2CC;}
+	.st1{fill:#5C7BFF;}
+	.st2{font-family:'Roboto-Bold';}
+	.st3{font-size:12px;}
+	.st4{font-family:'Roboto-Regular';}
+	.st5{font-family:'Roboto-Medium';}
+	.st6{fill:#871EFF;}
+	.st7{fill:#36BF4A;}
+	.st8{fill:#FFFFFF;}
+	.st9{font-size:15.7469px;}
+	.st10{fill:#C7170D;}
+</style>
+<rect class="st0" width="500" height="750"/>
+<g>
+	<text transform="matrix(1 0 0 1 191.53 60.8789)" class="st1 st2 st3">Home</text>
+	<text transform="matrix(1 0 0 1 276.53 60.8789)" class="st1 st4 st3">About</text>
+</g>
+<text transform="matrix(1 0 0 1 52.2627 138.8286)" class="st5 st3">Total Collected: $3.5</text>
+<text transform="matrix(1 0 0 1 208.2627 138.8286)" class="st5 st3">Last Collected: $1.5</text>
+<text transform="matrix(1 0 0 1 344.2627 138.8286)" class="st5 st3">Remaining Pumps: 54</text>
+<circle class="st6" cx="250" cy="375" r="152.74"/>
+<g>
+	<path class="st7" d="M239.77,620H101.23C95.58,620,91,615.42,91,609.77v-20.53c0-5.65,4.58-10.23,10.23-10.23h138.53
+		c5.65,0,10.23,4.58,10.23,10.23v20.53C250,615.42,245.42,620,239.77,620z"/>
+	<text transform="matrix(1 0 0 1 149.8745 604.1016)" class="st8 st4 st9">Pump</text>
+</g>
+<g>
+	<path class="st10" d="M441.77,620H303.23c-5.65,0-10.23-4.58-10.23-10.23v-20.53c0-5.65,4.58-10.23,10.23-10.23h138.53
+		c5.65,0,10.23,4.58,10.23,10.23v20.53C452,615.42,447.42,620,441.77,620z"/>
+	<text transform="matrix(1 0 0 1 343.2935 604.1016)" class="st8 st4 st9">Cashout</text>
+</g>
+</svg>
